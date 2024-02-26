@@ -3,7 +3,7 @@
 
 static volatile uint32_t _millis = 0L;  // millis since start of the program
 
-void vApplicationTickHook(void) {
+void sys_tick_handler(void) {
     ++_millis;
 }
 
